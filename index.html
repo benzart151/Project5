@@ -1,88 +1,386 @@
 <!doctype html>
 <html>
 <head>
-	<meta charset="UTF-8">
-	<title>Benny's Pizza Home</title>
-	<link href="css/stylesheet.css" rel="stylesheet" type="text/css">
+<meta charset="UTF-8">
+<title>Benny's Pizza Home</title>
+
+	<style>
+		/* Link Defaults */
+		a:link, a:visited{
+		text-decoration: none;
+    	color: #f2f2f2;
+		}
+		a:hover, a:active {
+    	text-decoration: underline;
+		color: #f2f2f2;
+		}
+		
+		/*Styles for main text items*/
+		.mainText{
+			margin: 5%;
+			color: #009246;
+			background-color: rgba(240,240,237,0.8);
+			opacity: 0.9;
+			padding-left: 20px;
+			padding-right: 20px;
+			padding-top: 10px;
+			padding-bottom: 10px;
+			border-radius: 5px;
+			font-family: Arial;
+		}
+
+		.mainText p{
+			text-align: justify;
+			font-size: 20px;
+		}
+		.mainText h1{
+			text-align: center;
+			font-size: 40px;
+		}
+		
+		
+		/*Wrapper for all content*/
+		.wrapper {
+			max-width: 768px;
+			min-width: 480;
+			height: auto;
+			background-image: url(/Images/bricks800red.jpg/);
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: -10px;
+			z-index: 1;
+			
+		}
+		
+		/*Menu Items*/
+		.menu p{
+			font-family: Arial;
+			font-size: 14px;
+			color: #009246;
+		}
+
+		.menu h1{
+			font-family: Arial;
+			font-size: 24px;
+			color: #009246;
+		}
+
+		.menu h2{
+			font-family: Arial;
+			font-size: 20px;
+			color: #009246;
+		}
+
+		.menu h3{
+			font-family: Arial;
+			font-size: 16px;
+			font-weight: 600;
+			color: #009246;
+		}
+
+		.menu strong{
+		   color: #ce2b37; 
+		}
+
+		
+		/*Mobile Home Page*/
+		#home{
+			text-align: center;	
+			text-align: center;
+			font-family: Arial;
+			color: #ce2b37;
+			font-weight: 600;
+		}
+		
+		#home li{
+			list-style: none;
+			display: inline;
+			position: relative;
+			left: -20px;
+		}
+		
+		/*footer*/
+		#footer{
+			
+		}
+		.bottom{
+			height: 20px;
+			margin: 20px;
+		}
+		
+	</style>
 </head>
-
-<body style="background-color: #ce2b37;"> 
-
-   <!--Left side of Navigation Social Media Links-->
-	<div class="navbarLeft">
-		<div class="social">
-			<ul>
+<!------------------------------------------------------------>
+<body style="background-color: #ce2b37;">
+	<div class="wrapper">
+		<!--home page-->
+		<div id="home">
+			<img src="Images/Benny'sPizzaLogo.png" width="300" alt="Benny's Pizza & Pasta">
+		  <ul>
 				<li><a href="https://www.facebook.com/" target="_blank"><img src="Images/facebook.svg" height="30px" alt="facebook"/></a></li>
 				<li><a href="https://twitter.com/Ben_Beller" target="_blank"><img src="Images/twitter.svg" height="30px" alt="twitter"/></a></li>
 				<li><a href="https://www.instagram.com/" target="_blank"><img src="Images/instagram.svg" height="30px" alt="instagram"/></a></li>
 			</ul>
+			<h2> <a href="tel:+3059428997">(305) 942-8997</a><br>
+			  <a href="https://goo.gl/maps/SP5TQHtgSgC2" target="_blank">1840 NE 163rd Street<br>
+			    North Miami Beach, FL 33162</a> </h2>
+			<p>&nbsp;</p>
+			<p>Get Our Food Delivered</p>
+			<ul class="delivery">
+				<li><a href="https://www.grubhub.com" target="_blank"><img src="Images/grubhub-squarelogo-1455220281753.png" width="auto" height="60" alt="Grubhub"/></a></li>
+				<li><a href="https://eat24hours.com" target="_blank"><img src="Images/B8_Nv003_400x400.jpg" width="auto" height="60" alt="Eat24"/></a></li>
+				<li><a href="https://www.ubereats.com" target="_blank"><img src="Images/uber_eats.png" width="auto" height="60" alt=""/></a></li>
+			</ul>
 		</div>
-	</div>
-
-	<!--Navigation with Dropdown for Menu-->
-	<div class="navbar">
-		<a href="careers.html">Careers</a>
-		<a href="testimonials.html">Testimonials</a>
-		<!--deopdown Menu-->
-	  <div class="dropdown">
-		<button class="dropbtn">Menu 
-		  <i class="fa fa-caret-down"></i>
-		</button>
-		<div class="dropdown-content">
-		  <a href="appetizers.html">Appetizers - Soups - Sides</a>
-		  <a href="salads.html">Salads</a>
-		  <a href="pizza.html">Pizza</a>
-		  <a href="sandwiches.html">Sandwiches</a>
-		  <a href="calzones.html">Calzones - Stromboli</a>
-		  <a href="pasta.html">Pastas - Entrees</a>
-		  <a href="beverages.html">Beverages - Deserts</a>
+		
+		<!--Welcome Page mobile site only-->
+		<div class="mainText" id="welcome">
+			<h1>Welcome To Benny's Pizza!</h1>
+			<p>
+			Here at Benny’s we strive to be the best Pizza and Pasta restaurant in South Florida. All of our dishes are made fresh daily from the finest organic vegetables, the freshest and best quality meats and cheeses and our home made doughs and pastas. We use recipes that have been handed down and built upon for ages and have been taste tested by thousands of patrons over time. Please check out our menu and testimonial sections as well as our reviews on your favorite social media platforms. As well as good food we do our best to provide polite, quality and friendly service. We take care of our staff just like we take care of our customers because a happy staff makes for happy patrons. So please stop by or order in, we are we would love to have you!
+			</p>
 		</div>
-		  <!--END Dropdown Menu-->
-	  </div>     
-		<a href="index.html">Home</a>
-	</div>
-	
-<div id="wrapper">
-		<!--Main Site Content Left Background and content-->
-		<div id="main">	
-			<!--Left Content Logo-->
-			<div id="logo">
-				<img src="Images/Benny'sPizzaLogo.png" width="300" alt="Benny's Pizza & Pasta">
-				<div id="logoText">
-					<h2>
-						<a href="tel:+3059428997">(305) 942-8997</a><br>
-						<a href="https://goo.gl/maps/SP5TQHtgSgC2" target="_blank">1840 NE 163rd Street<br>
-						   North Miami Beach, FL 33162</a>
-					</h2>
-					<p>Get Our Food Delivered</p>
-					 <ul class="delivery">
-						<li><a href="https://www.grubhub.com" target="_blank"><img src="Images/grubhub-squarelogo-1455220281753.png" width="auto" height="60" alt="Grubhub"/></a></li>
-						<li><a href="https://eat24hours.com" target="_blank"><img src="Images/B8_Nv003_400x400.jpg" width="auto" height="60" alt="Eat24"/></a></li>
-						<li><a href="https://www.ubereats.com" target="_blank"><img src="Images/uber_eats.png" width="auto" height="60" alt=""/></a></li>
-					 </ul>
-				</div>
-			</div>	
-			<div id="sidebar">
+		
+		<!--Appetizer Page-->		
+		<div class="mainText" id="Appetizers">
+			<h1>Benny's Appetizers, Soups & Sides!</h1>
 
-			</div>
+		   <!--MENU ITEMS-->
+			<div class="menu">
+				<h3>Garlic Rolls - 3 Rolls $1.75 - 1/2 Doz $2.75 - Doz $3.95 - add melted Mozerella Cheese for $0.75</h3>
+				<h2>Benny's Appetizers - Served with Italian bread</h2>
+				<p>
+					<strong>Fried Calamari - $9.75</strong><br>
+					<em>Lightly battered, tender & delicious served with tomato sauce & lemon</em><br>
+					<br>
+					<strong>Mozzarella Sticks - $8.95</strong><br>
+					<em>Serverd with Red or Pink Sauce</em><br>
+					<br>
+					<strong>Deep fried Cheese Ravioli - $9.95</strong><br>
+					<em>Red, White, or Pink Sauce</em><br>
+					<br>
+					<strong>Fresh Mozzarella with Tomato & Red Onion - $10.50</strong><br>
+					<em>Drizzled with our balsamic w/ Tomato & Red Onionvinaigrette dressing and topped with fresh basil</em><br>
+					<br>
+					<strong>Shrimp Scampi - $13.95</strong><br>
+					<em>Over 1/2 pound Jumbo Shrimp</em><br>
+					<br>
+					<strong>Shrimp Parmigiana - $15.95</strong><br>
+					<em>8 large tender gulf shrimp w/sauce & cheese</em><br>
+					<br>
+					<strong>Bruschetta – $7.50</strong><br>
+					<em>Garlic toast w/freshly chopped tomatoes, fresh basil, drizzled with our balsamic dressing and pecorino cheese</em><br>
+					<br>
+					<strong>Eggplant Mushroom Parmigiana - $9.75</strong><br>
+					<em>Lightly breaded eggplant cutlets & fresh sliced mushrooms baked en casserole with our own sauce & mozzarella. Served with whole wheat pita bread, sprouts & salad – choice of homemade dressings</em>
+				</p>
 
-			<!--right content-->
-			<div id="mainContent">
-				<div class="mainText">
-					<h1>Welcome To Benny's Pizza!</h1>
-					<p>
-					Here at Benny’s we strive to be the best Pizza and Pasta restaurant in South Florida. All of our dishes are made fresh daily from the finest organic vegetables, the freshest and best quality meats and cheeses and our home made doughs and pastas. We use recipes that have been handed down and built upon for ages and have been taste tested by thousands of patrons over time. Please check out our menu and testimonial sections as well as our reviews on your favorite social media platforms. As well as good food we do our best to provide polite, quality and friendly service. We take care of our staff just like we take care of our customers because a happy staff makes for happy patrons. So please stop by or order in, we are we would love to have you!
+				<h2>Benny's Soups</h2> 
+				<p>
+				<strong>“Signature” Soup Du Jour - Cup $3.50 - Bowl $4.50</strong><br>
+				<strong>Homemade Pasta Fagioli - Cup $3.50 - Bowl $4.50</strong>
+				</p>
+
+				<h2>Benny's Sides</h2>
+				<p>
+					<strong>Homemade Garlicky Pasta Salad - $2.95</strong><br>
+					<br>
+					<strong>Garlic Bread - $2.95</strong><br>
+					<br>
+					<strong>Garlic Cheese Bread - $5.95</strong><br>
+					<br>
+					<strong>Side of Meatballs - $0.75 .ea or 3 for $7.95</strong><br>
+					<em>Tasty & huge, served w/tomato sauce</em><br>
+					<br>
+					<strong>Italian Sausage Fontanini® - $7.50</strong><br>
+					<em>Chicago’s Finest Sausage</em><br>
+					<br>
+					<strong>Sausage & Peppers - $7.75</strong> - add Melted Mozzarella <strong>$1.95</strong><br>
+					<em>In our Tomato Sauce</em><br>
+					<br>
+					<strong>Pasta & Tomato Sauce - $4.25</strong><br>
+					<em>Choice of pasta</em><br>
+					<br>
+					<strong>Fettuccine Alfredo - $8.95</strong><br>
+					<em>Rich & Creamy</em><br>
+					<br>
+					<strong>Stuffed Shells - $6.95</strong><br>
+					<em>3 Jumbo Shells</em></br>
+					<br>
+					<strong>Baked Ziti - $6.75</strong> - add sausage<strong> $1.95</strong>  - add peppers<strong> $1.95</strong><br>
+					<em>With red or pink sauce</em><br>
+					<br>
+					<strong>Garlic Veggie Melt - $9.95</strong><br>
+					<em>Fresh broccoli, zucchini, carrots & mushrooms baked en casserole with garlic & cheeses erved with whole wheat pita bread, sprouts & salad – choice of homemade dressings</em><br>
+					<br>
+					<strong>Italian Bread - $2.75</strong><br>
+					<em>Baked Fresh Daily</em><br>
+					<br>
+					<strong>Sautéed Broccoli - $6.50</strong><br>
+					<em>Sautéed in Garlic & Oil</em><br>
+					<br>
+					<strong>Side of Sautéed Spinach - $6.50</strong><br>
+					<em>Sautéed in Garlic & Oil sprinkled with Roman Chesse</em><br>
+					<br>
+					<strong>Alfredo Sauce - 4 oz $2.95 -  8 oz $4.50</strong><br>
+					<br>
+					<strong>Spaghetti Sauce - 8 oz $1.50  - 16 oz $2.25</strong>
 					</p>
-				</div>
-				<div class="mainText">
-				<img src="Images/natural-logos.png" width="100%" height="auto" alt="Hormone Free - Free Range - All Natural - Grass Fed Beef - Organic"/>
-				</div>
 
 			</div>
-
-			<!-- simple floating footer-->
-
+			<!--END MENU ITEMS-->
 		</div>
-</div> <!--END Wrapper-->	
+		<!---End Appetizers-->
+		
+		<!--Salads Page-->		
+		<div class="mainText" id="Salad">
+			<h1>Benny's Salads!</h1>
+
+		   <!--MENU ITEMS-->
+  				<div class="menu">
+                <p>
+				<strong>Caesar Side Salad - $3.50</strong><br>
+				<em>Awesome dressing recipe, romaine, romano cheese & croutons</em><br>
+				<br>
+				<strong>Side Salad - $3.50</strong><br>
+				<em>Choice of homemade dressings with tomatoes, onions & pepperoncini</em><br>
+				<br>
+				<strong>House Salad - $5.75</strong><br>
+				<em>Mixed greens, tomatoes, onions, peppers, olives & choice of dressing</em><br>
+				<br>
+				<strong>Dinner Salad - $8.25</strong><br>
+				<em>Choice of homemade dressings Mixed greens, Swiss & cheddar cheeses, olives, tomatoes, onions, peppers & egg</em><br>
+				<br>
+				<strong>Benny's Salad - $8.25</strong><br>
+				<em>Choice of homemade dressings, Mixed greens, tomatoes, cheddar cheese, egg, fresh crumbled bacon, olives & croutons</em><br>
+				<br>
+				<strong>Stuffed Tomato - $9.50</strong><br>
+				<em>A juicy, ripe tomato, overstuffed with your choice of homemade tuna or chicken salad. Served with our homemade pasta salad & garnish</em><br>
+				<br>
+				<strong>Caesar Salad - $7.25</strong><br>
+				<em>Awesome dressing recipe, romaine lettuce, loads of romano cheese & croutons</em><br>
+				<br>
+				<strong>Chicken Caesar Salad - $9.75</strong><br>
+				<em>Awesome dressing recipe, romaine lettuce, loads of romano cheese & croutons with grilled chicken breast</em><br>
+				<br>
+				<strong>Chicken Gorgonzola Salad - Sm $8.95 - Lg $10.95</strong><br>
+				<em>Fresh field greens, tomatoes, grilled chicken breast, gorgonzola cheese, kalamata olives, and sliced purple onions with a side of balsamic vinaigrette</em><br>
+				<br>
+				<strong>Antipasto - Sm $8.95 - Lg $10.95</strong><br>
+				<em>Choice of homemade dressings, mixed salad greens, tomatoes, onions, peppers, mushrooms, black olives, pepperoni, ham, salami, provolone & mozzarella cheeses</em><br>
+				<br>
+				<strong>White Albacore Tuna Antipasto - Sm $8.95 - Lg $10.95</strong><br>
+				<em>Choice of homemade dressings, same as above with Benny's with White Albacore  tuna instead of meats</em><br>
+				<br>
+				<strong>California Salad - Sm $8.95 - Lg $10.95</strong><br>
+				<em>Choice of homemade dressings, mixed greens, tomatoes, grilled turkey breast, canadian bacon, swiss & cheddar cheeses, olives & hard boiled egg</em><br>
+				<br>
+				<strong>Frisco Salad - Sm $8.95 - Lg $10.95</strong><br>
+				<em>Choice of homemade dressings, strips of choice white meat oven grilled chicken breast, mixed greens, tomatoes, cheddar cheese, egg,crumbled bacon,olives & croutons</em><br>
+				<br>
+				<strong>Dijon Dill Chicken, White Albacore Tuna, or Garlicky Crab Salad Platter - Sm $8.95 - Lg $10.95</strong><br>
+				<em>Any two scoops of your homemade favorite with pasta salad, served on a bed of mixed greens with tomatoes, olives & hard boiled egg, choice of homemade dressings</em><br>
+				<br>
+				<strong>Cobb Salad - Sm $8.95 - Lg $10.95</strong><br>
+				<em>Choice of homemade dressings, mixed greens, grilled chicken breast, avocado, fresh mushrooms, tomatoes, egg, bleu cheese chunks & olives</em><br>
+				<br>
+				<strong>Chicken Cutlet Cobb - Sm $9.50 - Lg $11.95</strong><br>
+				<em>Salad Mixed greens, avocado, fresh mushrooms, tomatoes, egg, bleu cheese chunks & olives with fried chicken cutlet slices instead of grilled chicken</em><br>
+				<br>
+				<strong>Buffalo Chicken Salad - Sm $9.50 - Lg $10.95</strong><br>
+				<em>Chicken cutlets tossed in buffalo sauce, over field greens, tomatoes, cucumbers, purple onions, topped with Blue cheese crumbles Served with ranch dressing</em><br>
+				<br>
+				<strong>Frisco Salad - Sm $8.95 - Lg $10.95</strong><br>
+				<em>Choice of homemade dressings, strips of choice white meat oven grilled chicken breast, mixed greens, tomatoes, cheddar cheese, egg, crumbled bacon, olives & croutons</em><br>
+				<br>
+				<strong>Greek Salad Traditional - Sm $8.95 - Lg $10.95</strong><br>
+				<em>Greek salad loaded with feta cheese, pepperoncini, olives, etc. Served with Greek dressing</em><br>
+				<br>
+				<strong>Greek Chicken Salad</strong> - Sm $8.95 - Lg $10.95</strong><br>
+				<em>Grilled chicken strips atop a bed of mixed greens with tomato wedges, cucumbers, peperoncini, bell pepper, feta cheese, olives and red onions. Served with Greek dressing</em><br>
+				<br>
+				<strong>South Beach Salad - $10.95</strong><br>
+				<em>Assorted baby greens with crumbled bacon, chopped egg, purple onions, mushrooms, olives and bleu cheese chunks, served with our balsamic vinaigrette</em><br>
+				<br>
+				<strong>Catalina Salad - $10.95</strong><br>
+				<em>Roasted red and yellow peppers, chopped tomatoes and scallions, portobello mushrooms, artichoke hearts and grilled chicken breast atop a bed of mixed greens</em><br>
+				<br>
+				<strong>Spinach Salad - $10.95</strong><br>
+				<em>Fresh spinach and mixed greens with fresh mushrooms, Mandarin orange slices, chopped egg, crumbled bacon and cashew pieces, served with honey mustard dressing</em><br>
+				<br>
+				<strong>Veggie Chicken Salad - $10.95</strong><br>
+				<em>Fresh field greens with tomatoes, zucchini, mushroom slices, olives, crisp broccoli, green pepper and red onion slices, topped with grilled chicken breast, served with choice of dressing and whole wheat pita stuffed with sprouts</em><br>
+				<br>
+			</p>
+			</div>
+			<!--END MENU ITEMS-->
+		
+		</div>
+		<!---End Salad-->
+		
+		<!--Pizza-->
+		<div class="mainText" id="Pizza">
+			<h1>Benny's Pizza!</h1>
+
+		   <!--MENU ITEMS-->
+			<div class="menu">
+  				<div class="menu">
+					<h2>Pizza</h2>
+					<p>
+					<strong>Small 12"</strong> (6 slices) <strong>- $10.75</strong>  - toppings <strong>$1.35 ea.</strong><br>
+					<br>
+					<strong>Medium 14"</strong> ( 8 slices) <strong>- $11.75</strong>  - toppings <strong>$1.60 ea.</strong><br>
+					<br>
+					<strong>Large 16"</strong> (7 slices) <strong>- $12.75</strong>  - toppings <strong>$1.85 ea.</strong><br>
+					<br>
+					<strong>XtraLarge 18"</strong> (8 Slices) <strong>- $15.25</strong>  - toppings <strong>$2.65</strong><br>
+					<br>
+					<strong>Sicilian 16"X6"</strong> Square  (8 Slices) <strong>- $15.25</strong>  - toppings <strong>$2.65</strong><br>
+					<br>
+					<strong>Slices</strong> regular <strong>- $2.75</strong>  - toppings <strong> $0.55</strong><br>
+					<br>
+					<strong>Sicilian</strong> <strong>- $2.85</strong>  - toppings <strong>$0.55</strong><br>
+					<br>
+					</p>
+
+					<h2>Pizza Toppings</h2>
+					<p>
+					Pepperoni, Sausage, Meatball, Ham, Canadian Bacon, Salami, Mushroom, Green Pepper, Onion, Broccoli, Spinach, Black Olive, Fresh Garlic, Pineapple, Sliced Tomato, Anchovy, Jalapeno, Artichokes, Eggplant, Basil, Extra Cheese 
+					</p>
+
+					<h2>Specialty Pizza</h2>
+					<p>
+					<strong>Benny's Special - Sm $16.25 - Md $18.25 - Lg $20.25</strong><br>
+					<em>pepperoni, sausage, meatball, green pepper, onion, mushroom, and anchovy on request</em><br>
+					<br>
+					<strong>Veggie - Sm $16.25 - Md $18.25 - Lg $20.25</strong><br>
+					<em>mushroom, green pepper, onion, broccoli, black olive, slice tomato, and spinach</em><br>
+					<br>
+					<strong>Meat Lover's - Sm $14.95 - Md $16.95 - Lg $18.95</strong><br>
+					<em>pepperoni, meatball, sausage, and ham</em><br>
+					<br>
+					<strong>White Pizza - Sm $12.25 - Md $13.75 - Lg $14.50</strong><br>
+					<em>no sauce, ricotta, mozzarella and romano cheese</em><br>
+					<br>
+					<strong>Spinach Delight - Sm $13.75 - Md $17.50 - Lg $15.75</strong><br>
+					<em>spinach, slice tomato and fresh garlic</em><br>
+					<br>
+					<strong>Tomato Basil - Sm $13.75   Md $15.75   Lg $17.50</strong><br>
+					<em>fresh tomato slices, fresh basil and fresh chopped garlic</em>
+					</p>
+			</div>
+			<!--END MENU ITEMS-->
+		</div>
+		</div>
+		<!--End Pizza-->
+		
+		
+		
+		<!--Footer-->
+		<div id="footer" class="mainText">
+				<img src="Images/natural-logos.png" width="100%" height="auto" alt="Hormone Free - Free Range - All Natural - Grass Fed Beef - Organic"/>
+		</div>
+		<div class="bottom"></div>
+	</div>
 </body>
 </html>

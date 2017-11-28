@@ -23,7 +23,6 @@ a:hover, a:active {
 }
  
 /** Left Navigation Bar **/
-<style>
 .navbarLeft {
     float:left;
    }
@@ -43,14 +42,14 @@ a:hover, a:active {
     overflow: hidden;
     background-color: #009246;
     font-family: Arial;
-    float: right;
+    float: left;
     width: 100%;
     margin-top: -40px;
 	z-index: 9999;
 }
 
 .navbar a {
-    float: right;
+    float: left;
     font-size: 16px;
     color: white;
     text-align: center;
@@ -59,7 +58,7 @@ a:hover, a:active {
 }
 
 .dropdown {
-    float: right;
+    float: left;
     overflow: hidden;
 }
 
@@ -106,8 +105,9 @@ a:hover, a:active {
 /** Left Side Bar**/
 #logo{
     position:absolute;
+	align-self: center;
 	width: 30%;
-	float: left;
+	float: none;
 	text-align: center;
 	font-family: Arial;
 	color: #f2f2f2;
