@@ -3,147 +3,31 @@
 <head>
 <meta charset="UTF-8">
 <title>Benny's Pizza Home</title>
-
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
 	<style>
-		/* Link Defaults */
-		a:link, a:visited{
-		text-decoration: none;
-    	color: #f2f2f2;
-		}
-		a:hover, a:active {
-    	text-decoration: underline;
-		color: #f2f2f2;
-		}
-		
-		/*Styles for main text items*/
-		.mainText{
-			margin: 5%;
-			color: #009246;
-			background-color: rgba(240,240,237,0.8);
-			opacity: 0.9;
-			padding-left: 20px;
-			padding-right: 20px;
-			padding-top: 10px;
-			padding-bottom: 10px;
-			border-radius: 5px;
-			font-family: Arial;
-		}
 
-		.mainText p{
-			text-align: justify;
-			font-size: 20px;
-		}
-		.mainText h1{
-			text-align: center;
-			font-size: 40px;
-		}
-		
-		
-		/*Wrapper for all content*/
-		.wrapper {
-			max-width: 768px;
-			min-width: 480;
-			height: auto;
-			background-image: url(Images/bricks800red.jpg);
-			margin-left: auto;
-			margin-right: auto;
-			margin-top: -10px;
-			z-index: 1;
-			
-		}
-		
-		/*Menu Items*/
-		.menu p{
-			font-family: Arial;
-			font-size: 14px;
-			color: #009246;
-		}
-
-		.menu h1{
-			font-family: Arial;
-			font-size: 24px;
-			color: #009246;
-		}
-
-		.menu h2{
-			font-family: Arial;
-			font-size: 20px;
-			color: #009246;
-		}
-
-		.menu h3{
-			font-family: Arial;
-			font-size: 16px;
-			font-weight: 600;
-			color: #009246;
-		}
-
-		.menu strong{
-		   color: #ce2b37; 
-		}
-
-		
-		/*Mobile Home Page*/
-		#home{
-			text-align: center;	
-			text-align: center;
-			font-family: Arial;
-			color: #ce2b37;
-			font-weight: 600;
-		}
-		
-		#home li{
-			list-style: none;
-			display: inline;
-			position: relative;
-			left: -20px;
-		}
-		
-		/*footer*/
-		#footer{
-			
-		}
-		.bottom{
-			height: 20px;
-			margin: 20px;
-		}
-		
-        /**Testimonials Div**/
-        .testimonials{
-            font-family: Arial;
-        }
-        .testimonials p{
-            font-size: 14px;
-            color: #009246;
-            font-weight: 400;
-
-        }
-        .testimonials h2{
-            font-size: 26px;
-            font-weight: 700;
-        }
-        .testimonials h3{
-            font-size: 18px;
-            font-weight: 600;
-        }
-        .testimonials strong{
-            font-weight: 700;
-            color: #ce2b37;
-        }
-        
-        /*Careers Page*/
-        .careers h2{
-            text-align: center;
-            font-size: 30px;
-        }
-
-        .careers p{
-            font-size: 18px;
-        }
 	</style>
 </head>
 <!------------------------------------------------------------>
 <body style="background-color: #ce2b37;">
+    <!--Navbar-->
+    <div class="navbar">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#news"class="navul">News</a></li>
+          <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Dropdown</a>
+            <div class="dropdown-content">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+          </li>
+        </ul>
+     </div>   
+    <!--End Navbar-->
+    
+    
 	<div class="wrapper">
 		<!--home page-->
 		<div id="home">
