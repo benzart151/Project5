@@ -1,9 +1,11 @@
 /*Navbar Styles*/
 .navbar{
-    width: 100%;
+    max-width: 768px;
+    min-width: 480;
     height: 40px; 
     position: fixed;
     top: 0px;
+    left: 0px;
     margin-top: -3px;
     font-family: Arial;
     background-color: #009246;
