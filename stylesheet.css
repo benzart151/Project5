@@ -117,24 +117,28 @@ color: #f2f2f2;
 .menu p{
     font-family: Arial;
     font-size: 14px;
+    text-align: center;
     color: #009246;
 }
 
 .menu h1{
     font-family: Arial;
     font-size: 24px;
+    text-align: center;
     color: #009246;
 }
 
 .menu h2{
     font-family: Arial;
     font-size: 20px;
+    text-align: center;
     color: #009246;
 }
 
 .menu h3{
     font-family: Arial;
     font-size: 16px;
+    text-align: center;
     font-weight: 600;
     color: #009246;
 }
