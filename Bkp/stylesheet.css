@@ -1,59 +1,69 @@
 /*Navbar Styles*/
 .navbar{
-    width: 100vh;
+    max-width: 768px;
+    min-width: 480;
     height: 40px; 
     position: fixed;
     top: 0px;
+    left: 0px;
     margin-top: -3px;
     font-family: Arial;
     background-color: #009246;
     z-index: 8888;
     }    
-.navbar img{
-    margin-top: 6px;
-    margin-left: 20px;
-}
-
-/*Navigation Page*/
-#navPage{
-    max-width: 768px;
-    min-width: 480;
-    height: 100vh;
-    position: absolute;
-    top: 0px;
-    background-image: url(Images/pepperoni-2571392.jpg);
-    background-color: #ce2b37;
-    align-content: center;
-}
-
-#navTable{
-    width: 100vh;
-    text-align: center;
-    font-family: Arial;
-}
-
-#navTable table{
-    margin-top: 60px;
-    margin-left: auto;
-    margin-right: auto;
-    vertical-align: middle;
-}
-
-#navTable td{
-    border-style: solid;
-    border-width: 1px;
-    border-color: white;
-    border-collapse: separate;
-    border-spacing: 10px 10px;
-    padding: 5px;
-    margin: 10px;
+.navbar    ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
     background-color: #009246;
-    font-weight: 700;
 }
 
-#navTable td:hover{
+.navbar   li {
+    float: left;
     text-decoration: none;
+}
+
+.navbar   li a, .dropbtn {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar   li a:hover, .dropdown:hover .dropbtn {
     background-color: #ce2b37;
+    text-decoration: none;
+}
+
+.dropdown li {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #009246;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 9999;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #009246;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
 }
 
 /* Link Defaults */
