@@ -31,13 +31,15 @@
     width: 100vh;
     text-align: center;
     font-family: Arial;
+    align-content: center;
 }
 
 #navTable table{
     margin-top: 60px;
-    margin-left: auto;
-    margin-right: auto;
+    position: relative;
+    margin-left: 10%;
     vertical-align: middle;
+    align-content: center;
 }
 
 #navTable td{
