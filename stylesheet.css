@@ -1,9 +1,10 @@
 /*Navbar Styles*/
 .navbar{
-    width: 100vh;
+    width: 105vh;
     height: 40px; 
     position: fixed;
     top: 0px;
+    left: -3px;
     margin-top: -3px;
     font-family: Arial;
     background-color: #009246;
