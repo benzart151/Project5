@@ -20,9 +20,8 @@
     min-width: 480;
     height: 100vh;
     position: absolute;
+    margin: auto;
     top: 0px;
-    background-image: url(Images/pepperoni-2571392.jpg);
-    background-color: #ce2b37;
     align-content: center;
 }
 
