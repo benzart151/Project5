@@ -11,7 +11,7 @@
     z-index: 8888;
     }    
 .navbar img{
-    margin-top: 6px;
+    margin-top: 10px;
     margin-left: 20px;
 }
 
@@ -19,10 +19,11 @@
 #navPage{
     max-width: 768px;
     min-width: 480;
-    height: 100vh;
-    position: absolute;
-    margin: auto;
-    top: 0px;
+    height: auto;
+    margin-left: 0;
+    margin-right: auto;
+    margin-top: 35px;
+    z-index: 1;
     align-content: center;
 }
 
