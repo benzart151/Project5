@@ -22,22 +22,19 @@
     height: auto;
     margin-left: 0;
     margin-right: auto;
-    margin-top: 35px;
+    margin-top: 70px;
     z-index: 1;
     align-content: center;
 }
 
 #navTable{
-    width: 100vh;
     text-align: center;
     font-family: Arial;
     align-content: center;
 }
 
 #navTable table{
-    margin-top: 60px;
-    position: relative;
-    margin-left: 10%;
+    margin: auto;
     vertical-align: middle;
     align-content: center;
 }
